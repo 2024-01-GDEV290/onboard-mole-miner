@@ -12,6 +12,7 @@ public class BreakableWall : MonoBehaviour
     public AudioClip wallBreak;
     public AudioClip wallHit;
     public CameraShake cameraShake;
+    public GameObject debris;
     //public float volume = 0.5f;
 
     private int hitCount = 0;
@@ -35,6 +36,8 @@ public class BreakableWall : MonoBehaviour
             particles.Play();
             particles.gameObject.transform.parent = null;
             cameraShake.StartShake();
+            Instantiate(debris);
+            debris.transform.position = transform.position;
             Destroy(gameObject);
         }
 
