@@ -7,6 +7,7 @@ public class BreakableWall : MonoBehaviour
 
     public Animator animator;
     public ParticleSystem particles;
+    public ParticleSystem hitEffect;
     public AudioSource audioSource;
     public AudioSource audioSource2;
     public AudioClip wallBreak;
@@ -54,6 +55,7 @@ public class BreakableWall : MonoBehaviour
         // Drill Collision
         if(other.gameObject.tag == "Drill" && hitTime <= 0)
         {
+            hitEffect.Play();
             audioSource2.PlayOneShot(wallHit, 0.4f);
             hitTime = 10;
             hitCount += 1;
