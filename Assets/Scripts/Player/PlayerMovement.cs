@@ -8,6 +8,7 @@ public class PlayerMovement : MonoBehaviour
     public BoxCollider2D drillCollider;
     public AudioSource audio;
     public AudioClip drilling_drill;
+    public AudioClip pickup;
 
     private float horizontal;
     private float speed = 8f;
@@ -86,4 +87,16 @@ public class PlayerMovement : MonoBehaviour
         return Physics2D.OverlapCircle(groundCheck.position, 0.2f, groundLayer);
 
     }
+
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        if(collision.gameObject.tag == "Rock")
+        {
+            audio.PlayOneShot(pickup, 0.5f);
+        }
+    }
 }
+
+
+
+

@@ -163,3 +163,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   forceMultiplier: 50
   collectionDistance: 2
+  audioSource: {fileID: 0}
+  pickup: {fileID: 0}

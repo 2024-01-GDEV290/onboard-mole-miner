@@ -10654,6 +10654,7 @@ MonoBehaviour:
   drillCollider: {fileID: 760971500}
   audio: {fileID: 1336221989}
   drilling_drill: {fileID: 8300000, guid: 4107ba5748522446e9d60ab6b25f94d8, type: 3}
+  pickup: {fileID: 8300000, guid: ccb608d686d5a4be49bdef5ecd45bb82, type: 3}
   rb: {fileID: 1336221985}
   groundCheck: {fileID: 65299560}
   groundLayer:
@@ -13253,7 +13254,7 @@ SceneRoots:
   m_Roots:
   - {fileID: 223179676}
   - {fileID: 1932178863}
-  - {fileID: 593441020}
   - {fileID: 1336221983}
   - {fileID: 892742374}
   - {fileID: 1573882084}
+  - {fileID: 593441020}

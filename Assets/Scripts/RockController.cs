@@ -10,6 +10,8 @@ public class RockController : MonoBehaviour
     GameObject player;
     public float collectionDistance = 0.5f;
     Rigidbody2D rb;
+    public AudioSource audioSource;
+    public AudioClip pickup;
 
 
     private void Start()
