@@ -23,11 +23,14 @@ public class PlayerMovement : MonoBehaviour
     private void Start()
     {
         wasGrounded = true;
+        pickup.volume = 0.3f;
+        //pickup.Play();
+
     }
 
     // Update is called once per frame
     void Update()
-    {   
+    {
 
         // Horizontal Movement
 
@@ -93,12 +96,19 @@ public class PlayerMovement : MonoBehaviour
 
     }
 
-    void OnCollisionEnter2D(Collision2D collision)
+    //void OnCollisionEnter2D(Collision2D collision)
+    //{
+    //    if(collision.gameObject.tag == "Rock")
+    //    {
+    //        Debug.Log("Rock collision");
+    //        //pickup.Play();
+    //        StartCoroutine(PlayPickupAudio());
+    //    }
+    //}
+
+    public void  PlayPickupAudio()
     {
-        if(collision.gameObject.tag == "Rock")
-        {
-            pickup.Play();
-        }
+        pickup.Play();
     }
 }
 

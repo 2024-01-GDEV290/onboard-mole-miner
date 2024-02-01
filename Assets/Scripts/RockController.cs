@@ -54,10 +54,9 @@ public class RockController : MonoBehaviour
     {
         if (!isSpawning)
         {
-            Debug.Log("Collision detected");
-
             if (collision.gameObject.tag == "Player")
             {
+                collision.GetComponent<PlayerMovement>().PlayPickupAudio();
                 Destroy(gameObject);
             }
         }
