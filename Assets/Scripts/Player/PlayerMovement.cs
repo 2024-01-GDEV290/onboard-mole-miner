@@ -8,7 +8,7 @@ public class PlayerMovement : MonoBehaviour
     public BoxCollider2D drillCollider;
     public AudioSource audio;
     public AudioClip drilling_drill;
-    public AudioClip pickup;
+    public AudioSource pickup;
 
     private float horizontal;
     private float speed = 8f;
@@ -97,7 +97,7 @@ public class PlayerMovement : MonoBehaviour
     {
         if(collision.gameObject.tag == "Rock")
         {
-            audio.PlayOneShot(pickup, 0.5f);
+            pickup.Play();
         }
     }
 }
