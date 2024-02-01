@@ -5018,7 +5018,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 65299560}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: GroundCheck
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -10282,7 +10282,7 @@ GameObject:
   m_Component:
   - component: {fileID: 760971499}
   - component: {fileID: 760971500}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: DrillCollider
   m_TagString: Drill
   m_Icon: {fileID: 0}
@@ -15322,7 +15322,7 @@ GameObject:
   - component: {fileID: 1336221988}
   - component: {fileID: 1336221987}
   - component: {fileID: 1336221989}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -15403,7 +15403,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 2
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 4
