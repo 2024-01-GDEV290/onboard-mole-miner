@@ -37,7 +37,20 @@ public class RockController : MonoBehaviour
     }
 
 
-    void OnCollisionEnter2D(Collision2D collision)
+    //void OnCollisionEnter2D(Collision2D collision)
+    //{
+    //    if (!isSpawning)
+    //    {
+    //        Debug.Log("Collision detected");
+
+    //        if (collision.gameObject.tag == "Player")
+    //        {
+    //            Destroy(gameObject);
+    //        }
+    //    }
+    //}
+
+    private void OnTriggerEnter2D(Collider2D collision)
     {
         if (!isSpawning)
         {
